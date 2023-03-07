@@ -5,5 +5,5 @@
 - Result: This results in improved performance (as initialization processes/footprint are not repeated with each initialization)
 
 - The Project contains Two branches:
-      1- Before: With legacy code 
+      1- legacy: With legacy code to show the code without implementing the pattern 
       2- master: with the pattern applied.
