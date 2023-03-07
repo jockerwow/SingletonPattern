@@ -9,9 +9,27 @@ namespace SingletonPattern
     public class CurrencyConverter
     {
         private IEnumerable<ExchangeRate> _exchangeRates;
-        public CurrencyConverter()
+        private CurrencyConverter()
         {
             LoadExchangeRates();
+        }
+
+        private static object _lock = new();
+        private static CurrencyConverter _instance;
+        public static CurrencyConverter Instance
+        {
+            get
+            {
+                if (_instance == null)//double-checking
+                {
+                    lock (_lock)//Apply thread-safty control on initialization
+                    {
+                        if (_instance == null)
+                            _instance = new();
+                    }
+                }
+                return _instance;
+            }
         }
 
         private void LoadExchangeRates()

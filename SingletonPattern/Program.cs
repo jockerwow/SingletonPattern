@@ -10,8 +10,8 @@ while (true)
     var targetCurrency = Console.ReadLine();
     Console.Write("Enter amount: ");
     var amount = decimal.Parse(Console.ReadLine());
-    var converter = new CurrencyConverter();
-    var exchangedAmount = converter.Convert(baseCurrency,targetCurrency,amount);
+    //var converter = new CurrencyConverter();
+    var exchangedAmount = CurrencyConverter.Instance.Convert(baseCurrency,targetCurrency,amount);
     Console.WriteLine($"{amount} {baseCurrency} = {exchangedAmount} {targetCurrency}");
     Console.WriteLine("------------------------------------------------");
 }
