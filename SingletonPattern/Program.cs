@@ -3,7 +3,8 @@
 using SingletonPattern;
 
 while (true)
-{
+{   //On first iteration, the CurrencyConverter.Instance will be initialized. 
+    //On later iterations, the pre-initialized CurrencyConverter.Instance will be utilized directly
     Console.Write("Enter base currency: ");
     var baseCurrency = Console.ReadLine();
     Console.Write("Enter target currency: ");
