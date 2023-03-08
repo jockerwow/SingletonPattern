@@ -10,4 +10,4 @@ Although Static classes can produce similar result, you can not apply OOP practi
       2- master: with the pattern applied.
 - Credits: 
 Passionate Coders
-[https://www.youtube.com/watch?v=9YNAPv4Uz98](https://www.youtube.com/watch?v=MfA48pQsXsg)
+[https://www.youtube.com/watch?v=MfA48pQsXsg](https://www.youtube.com/watch?v=MfA48pQsXsg)
